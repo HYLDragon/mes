@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mes-activemq-api:war">
+    <output-path>$PROJECT_DIR$/mes-activemq/mes-activemq-api/target</output-path>
+    <root id="archive" name="mes-activemq-api.war">
+      <element id="artifact" artifact-name="mes-activemq-api:war exploded" />
+    </root>
+  </artifact>
+</component>

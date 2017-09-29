@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mes-upms-rpc-service:war">
+    <output-path>$PROJECT_DIR$/mes-upms/mes-upms-rpc-service/target</output-path>
+    <root id="archive" name="mes-upms-rpc-service.war">
+      <element id="artifact" artifact-name="mes-upms-rpc-service:war exploded" />
+    </root>
+  </artifact>
+</component>

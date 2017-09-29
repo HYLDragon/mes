@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mes-pollute-rfc-service:war">
+    <output-path>$PROJECT_DIR$/mes-pollute/mes-pollute-rfc-service/target</output-path>
+    <root id="archive" name="mes-pollute-rfc-service.war">
+      <element id="artifact" artifact-name="mes-pollute-rfc-service:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mes-upms-common:war">
+    <output-path>$PROJECT_DIR$/mes-upms/mes-upms-common/target</output-path>
+    <root id="archive" name="mes-upms-common.war">
+      <element id="artifact" artifact-name="mes-upms-common:war exploded" />
+    </root>
+  </artifact>
+</component>

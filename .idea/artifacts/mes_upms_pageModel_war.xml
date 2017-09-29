@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mes-upms-pageModel:war">
+    <output-path>$PROJECT_DIR$/mes-upms/mes-upms-pageModel/target</output-path>
+    <root id="archive" name="mes-upms-pageModel.war">
+      <element id="artifact" artifact-name="mes-upms-pageModel:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mes-pollute-rfc-service:war exploded">
+    <output-path>$PROJECT_DIR$/mes-pollute/mes-pollute-rfc-service/target/mes-pollute-rfc-service</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mes-pollute-rfc-service" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/mes-pollute/mes-pollute-rfc-service/target/mes-pollute-rfc-service/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="mes-pollute-rfc-service/web/Web" />
+    </root>
+  </artifact>
+</component>
