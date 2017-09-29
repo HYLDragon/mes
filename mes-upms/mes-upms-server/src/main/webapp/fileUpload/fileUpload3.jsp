@@ -1,0 +1,61 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <!-- 
+
+	
+	url:'${pageContext.request.contextPath}/repertoryController/datagrid',
+	
+   -->
+  	<title>库区管理</title>
+	<jsp:include page="../inc.jsp"></jsp:include>
+	<script type="text/javascript">
+		var datagrid;
+		
+		
+		$(function(){
+			parent.$.messager.progress('close');
+			$("#input-fa").fileinput({
+			    theme: "fa",
+			    language:'zh',  
+		        uploadAsync:true,  
+			    uploadUrl: "${pageContext.request.contextPath}/fileController/upload"
+			}).on("fileuploaded", function(event, data) {
+		        if(data.response)
+		        {
+		            //alert('处理成功'+data+" [response]"+data.response);
+		        }
+			});
+			
+		});
+		
+		var searchFun=function(){
+			datagrid.datagrid('load',$.serializeObject($('#bar_bar_searchForm')));
+		};
+		var cleanFun=function(){
+			$('#bar_bar_searchForm input').val('');
+			datagrid.dataagrid('load',{});
+		};
+	</script>
+  </head>
+  
+  <body>
+	<div class="easyui-layout" data-options="fit:true,border:false">
+		
+		<div data-options="region:'center',border:false">
+			<!-- <table id="datagrid"></table> -->
+			<label class="control-label">Select File</label>
+			<input id="input-fa" name="inputfa[]" type="file" multiple class="file-loading">
+		</div>
+	</div>
+	
+	<div id="toolbar">
+			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_add',plain:true" onclick="searchFun();">过滤条件</a>
+			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'brick_delete',plain:true" onclick="cleanFun();">清空条件</a>
+	</div>
+  </body>
+</html>

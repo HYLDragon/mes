@@ -1,0 +1,238 @@
+@import url(color.css);
+/*
+@import url(bootstrap-col-md-xs-lg.css);
+
+*/
+body {
+    color: #73879C;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+body{
+	 overflow-x : hidden;  
+     -overflow-y : hidden;  
+}
+body,div,img{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+li{
+	list-style-type:none;
+	
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a {
+    color: #5A738E;
+    text-decoration: none;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+:visited,
+:focus,
+:active,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: 0;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+#main-col{
+    padding: 10px 20px;
+    margin-left: 20px;
+    background: #F7F7F7;
+}
+
+/*
+页面标题样式
+*/
+.page-title {
+    width: 100%;
+    height: 65px;
+    padding: 10px 0;
+}
+
+/*
+标题左面的样式
+*/
+.page-title .title_left {
+    width: 45%;
+    float: left;
+    display: block;
+}
+.page-title .title_left h3 {
+    margin: 9px 0;
+}
+
+
+
+/*
+标题右面样式
+*/
+.page-title .title_right {
+    width: 55%;
+    float: left;
+    display: block;
+}
+.form-group {
+    margin-button: 10px;
+}
+.page-title .title_right .pull-right {
+    margin: 10px 0;
+    float: right!important;
+}
+/*
+搜索样式
+*/
+.top_search {
+    padding: 0;
+}
+.top_search .form-control {
+    border-right: 0;
+    box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.075);
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 20px;
+    border: 1px solid rgba(221, 226, 232, 0.49);
+}
+.top_search .form-control:focus {
+    border: 1px solid rgba(221, 226, 232, 0.49);
+    border-right: 0;
+}
+.top_search .input-group-btn button {
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid rgba(221, 226, 232, 0.49);
+    border-left: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #93A2B2;
+    margin-bottom: 0 !important;
+}
+
+
+/*
+搜索中按钮样式
+*/
+button,
+.buttons,
+.btn,
+.modal-footer .btn+.btn {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.btn-group-vertical .btn,
+.btn-group .btn {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.btn {
+    border-radius: 3px;
+}
+
+/*
+x_panel
+.example .pp = E F 是后代选择器。
+.example.pp2 则是在一个元素上，这个元素包括这两个类才会有效果。
+*/
+.x_panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fixed_height_320 {
+    height: 320px;
+}
+/*
+	添加一条白线的方法
+*/
+.x_title {
+    border-bottom: 2px solid #E6E9ED; 
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav> li{
+	float:left;
+}
+
+.panel_toolbox {
+    float: right;
+    min-width: 70px;
+}
+
+.dropdown-menu {
+    border: medium none;
+    box-shadow: none;
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 9998;
+    border: 1px solid #D9DEE4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-menu>li>a {
+    color: #5A738E;
+}
+
+.x_title h2 {
+    margin: 5px 0 6px;
+    float: left;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.x_title h2 small {
+    margin-left: 10px;
+}
+.x_title span {
+    color: #BDBDBD;
+}
+

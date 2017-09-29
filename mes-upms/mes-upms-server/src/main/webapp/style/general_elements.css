@@ -1,0 +1,532 @@
+@import url(color.css);
+/*
+@import url(bootstrap-col-md-xs-lg.css);
+
+*/
+body {
+    color: #73879C;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+body{
+	 overflow-x : hidden;  
+     -overflow-y : hidden;  
+}
+body,div,img{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+li{
+	list-style-type:none;
+	
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a {
+    color: #5A738E;
+    text-decoration: none;
+}
+a,
+a:visited,
+a:focus,
+a:active,
+:visited,
+:focus,
+:active,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: 0;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+#main-col{
+    padding: 10px 20px;
+    margin-left: 30px;
+    background: #F7F7F7;
+}
+
+/*
+页面标题样式
+*/
+.page-title {
+    width: 100%;
+    height: 65px;
+    padding: 10px 0;
+}
+
+/*
+标题左面的样式
+*/
+.page-title .title_left {
+    width: 45%;
+    float: left;
+    display: block;
+}
+.page-title .title_left h3 {
+    margin: 9px 0;
+}
+
+
+
+/*
+标题右面样式
+*/
+.page-title .title_right {
+    width: 55%;
+    float: left;
+    display: block;
+}
+.form-group {
+    margin-button: 10px;
+}
+.page-title .title_right .pull-right {
+    margin: 10px 0;
+    float: right!important;
+}
+/*
+搜索样式
+*/
+.top_search {
+    padding: 0;
+}
+.top_search .form-control {
+    border-right: 0;
+    box-shadow: inset 0 1px 0px rgba(0, 0, 0, 0.075);
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 20px;
+    border: 1px solid rgba(221, 226, 232, 0.49);
+}
+.top_search .form-control:focus {
+    border: 1px solid rgba(221, 226, 232, 0.49);
+    border-right: 0;
+}
+.top_search .input-group-btn button {
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid rgba(221, 226, 232, 0.49);
+    border-left: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #93A2B2;
+    margin-bottom: 0 !important;
+}
+
+
+/*
+搜索中按钮样式
+*/
+button,
+.buttons,
+.btn,
+.modal-footer .btn+.btn {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.btn-group-vertical .btn,
+.btn-group .btn {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.btn {
+    border-radius: 3px;
+}
+
+/*
+x_panel
+.example .pp = E F 是后代选择器。
+.example.pp2 则是在一个元素上，这个元素包括这两个类才会有效果。
+*/
+.x_panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fixed_height_320 {
+    height: 320px;
+}
+/*
+	添加一条白线的方法
+*/
+.x_title {
+    border-bottom: 2px solid #E6E9ED; 
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav> li{
+	float:left;
+}
+
+.panel_toolbox {
+    float: right;
+    min-width: 70px;
+}
+
+.dropdown-menu {
+    border: medium none;
+    box-shadow: none;
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 9998;
+    border: 1px solid #D9DEE4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-menu>li>a {
+    color: #5A738E;
+}
+
+.x_title h2 {
+    margin: 5px 0 6px;
+    float: left;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.x_title h2 small {
+    margin-left: 10px;
+}
+.x_title span {
+    color: #BDBDBD;
+}
+
+
+/*
+在左或在中的选项卡
+*/
+
+
+ul.bar_tabs {
+    overflow: visible;
+    background: #F5F7FA;
+    height: 25px;
+    margin: 21px 0 14px;
+    padding-left: 14px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid #E6E9ED;
+}
+ul.bar_tabs>li {
+    border: 1px solid #E6E9ED;
+    color: #333 !important;
+    margin-top: -17px;
+    margin-left: 8px;
+    background: #fff;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+ul.bar_tabs>li.active {
+    border-right: 6px solid #D3D6DA;
+    border-top: 0;
+    margin-top: -15px;
+}
+ul.bar_tabs>li a {
+    padding: 10px 17px;
+    background: #F5F7FA;
+    margin: 0;
+    border-top-right-radius: 0;
+}
+ul.bar_tabs>li a:hover {
+    border: 1px solid transparent;
+}
+ul.bar_tabs>li.active a {
+    border-bottom: none;
+}
+ul.bar_tabs.right {
+    padding-right: 14px;
+}
+ul.bar_tabs.right li {
+    float: right;
+}
+
+/*!
+ * bootstrap-vertical-tabs - v1.2.1
+ * https://dbtek.github.io/bootstrap-vertical-tabs
+ * 2014-11-07
+ * Copyright (c) 2014 İsmail Demirbilek
+ * License: MIT
+ */
+
+.tabs-left,
+.tabs-right {
+    border-bottom: none;
+    padding-top: 2px;
+}
+.tabs-left {
+    border-right: 1px solid #F7F7F7;
+}
+.tabs-right {
+    border-left: 1px solid #F7F7F7;
+}
+.tabs-left>li,
+.tabs-right>li {
+    float: none;
+    margin-bottom: 2px;
+}
+.tabs-left>li {
+    margin-right: -1px;
+}
+.tabs-right>li {
+    margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+    border-bottom-color: #F7F7F7;
+    border-right-color: transparent;
+}
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+    border-bottom: 1px solid #F7F7F7;
+    border-left-color: transparent;
+}
+.tabs-left>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display: block;
+    background: #F7F7F7;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tabs-right>li>a {
+    border-radius: 0 4px 4px 0;
+    margin-right: 0;
+    background: #F7F7F7;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*
+手风琴样式
+*/
+
+#accordion .panel {
+    margin-bottom: 5px;
+    border-radius: 0;
+    border-bottom: 1px solid #efefef;
+}
+#accordion .panel-heading {
+    background: #F2F5F7;
+    padding: 13px;
+    width: 100%;
+    display: block;
+}
+#accordion .panel:hover {
+    background: #F2F5F7;
+}
+
+/*
+dashboard-widget-content 
+*/
+.dashboard-widget-content {
+    padding-top: 9px;
+}
+ul.quick-list {
+    width: 45%;
+    padding-left: 0;
+    display: inline-block;
+}
+ul.quick-list li {
+    padding-left: 10px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ul.quick-list li i {
+    padding-right: 10px;
+    color: #757679;
+}
+
+
+.sidebar-widget {
+    overflow: hidden;
+}
+.dashboard-widget-content .sidebar-widget {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #abd9ea;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    padding: 2px;
+    margin-top: 10px;
+}
+/* 
+
+ */
+ 
+ul.timeline li {
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+    clear: both;
+}
+.timeline.widget {
+    min-width: 0;
+    max-width: inherit;
+}
+.timeline .block {
+    margin: 0;
+    border-left: 3px solid #e8e8e8;
+    overflow: visible;
+    padding: 10px 15px;
+}
+.timeline.widget .block {
+    margin-left: 5px;
+}
+
+.timeline h2.title {
+    position: relative;
+    font-size: 16px;
+    margin: 0;
+}
+/*
+圆圈css 画法
+*/
+.timeline h2.title:before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: 3px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #d2d3d2;
+    border-radius: 14px;
+    background: #f9f9f9
+}
+.timeline .byline {
+    padding: .25em 0;
+}
+.byline {
+    -webkit-font-smoothing: antialiased;
+    font-style: italic;
+    font-size: .9375em;
+    line-height: 1.3;
+    color: #aab6aa;
+}
+
+/*
+progress 样式
+*/
+.progress {
+    border-radius: 0;
+}
+.progress-bar-info {
+    background-color: #3498DB;
+}
+.progress-bar-success {
+    background-color: #26B99A;
+}
+
+/*
+to_do list
+*/
+
+ul.to_do {
+    padding: 0;
+}
+ul.to_do li {
+    background: #f3f3f3;
+    border-radius: 3px;
+    position: relative;
+    padding: 7px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+ul.to_do p {
+    margin: 0;
+}
+
+/*
+msg_list
+*/
+ul.msg_list li {
+    background: #f7f7f7;
+    padding: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 6px 6px 0;
+    width: 96% !important;
+}
+ul.msg_list li:last-child {
+    margin-bottom: 6px;
+    padding: 10px;
+}
+ul.msg_list li a {
+    padding: 3px 5px !important;
+}
+ul.msg_list li a .image img {
+    border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    float: left;
+    margin-right: 10px;
+    width: 11%;
+}
+ul.msg_list li a .time {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    background:none;
+}
+ul.msg_list li a .message {
+    display: block !important;
+    font-size: 11px;
+}
+

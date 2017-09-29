@@ -61,6 +61,10 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-event:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-quartz:1.4.0" />
+          <element id="library" level="project" name="Maven: org.opensymphony.quartz:quartz:1.6.1" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.4.0" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" />

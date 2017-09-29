@@ -1,0 +1,15 @@
+[{
+    "id":"加促",
+    "text":"加促",
+    "selected":false
+},{
+    "id":"无",
+    "text":"无条件",
+    "selected":true
+},{
+    "id":"未促",
+    "text":"未促"
+},{
+    "id":"药品",
+    "text":"药品"
+}]

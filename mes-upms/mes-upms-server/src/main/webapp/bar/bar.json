@@ -1,0 +1,3 @@
+{"msg":"获取条码信息成功!",
+"obj":{"rows":[{"createdDateTime":"2017-03-27 11:06:36","endBatch":4,"id":"0","kuWei":"K18","kuWeiDate":"2017-03-27 11:06:36.983","matLot":"20170101F06","matName":"8178","matType":"未促","matTypeSLZ":"L","remainder":4,"remark":"","shortBar":"1700100000177","starBatch":1,"state":"入库"}]
+,"total":1},"success":true}

@@ -21,8 +21,35 @@
             <artifactId>mes-upms-rpc-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.zx.mes.hyl</groupId>
+            <artifactId>mes-admin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
     <build>
         <finalName>mes-upms-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.6.v20170531</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <port>9090</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+
+        </plugins>
     </build>
 </project>
