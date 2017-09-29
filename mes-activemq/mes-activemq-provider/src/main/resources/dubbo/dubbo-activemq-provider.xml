@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="demo-authority-provider"  />
+
+	<!-- Zookeeper单机配置: -->
+	<dubbo:registry address="zookeeper://10.30.90.62:2181" />
+
+	<!--Zookeeper集群配置：-->
+	<!--<dubbo:registry address="zookeeper://10.20.153.10:2181?backup=10.20.153.11:2181,10.20.153.12:2181" />-->
+
+
+
+	<!--<dubbo:annotation/>-->
+	<!--<context:component-scan base-package="com.zx.mes.hyl.service"/>-->
+
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20880" />
+
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service" />-->
+	<!--<context:component-scan base-package="com.zx.mes.hyl"/>-->
+	<dubbo:service interface="com.zx.mes.hyl.mq.MQProducerI" ref="mqProducer"/>
+	<bean id="mqProducer" class="com.zx.mes.hyl.mq.MQProducer"></bean>
+
+
+
+
+
+</beans>

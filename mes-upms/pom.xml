@@ -16,6 +16,8 @@
         <module>mes-upms-rpc-api</module>
         <module>mes-upms-rpc-service</module>
         <module>mes-upms-pageModel</module>
+        <module>mes-upms-server</module>
+        <module>mes-upms-client</module>
     </modules>
 
     <dependencies>

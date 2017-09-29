@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
+
+
+	<!-- 提供方应用信息，用于计算依赖关系 -->
+	<dubbo:application name="mes-upms-consumer"  />
+
+
+	<!--Zookeeper集群配置：-->
+	<!--<dubbo:registry address="zookeeper://10.20.153.10:2181?backup=10.20.153.11:2181,10.20.153.12:2181" />-->
+
+
+
+	<!--<dubbo:annotation/>-->
+	<!--<context:component-scan base-package="com.zx.mes.hyl.service"/>-->
+
+	<dubbo:registry address="zookeeper://10.30.90.62:2181"/>
+
+
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service,com.zx.mes.hyl.service.impl" />-->
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service,com.zx.mes.hyl.service.impl" />-->
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.BugServiceI" id="bugServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.BugTypeServiceI" id="bugTypeServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.InitServiceI" id="initServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.ResourceServiceI" id="resourceServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.ResourceTypeServiceI" id="resourceTypeServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.RoleServiceI" id="roleServiceImpl"/>
+
+	<dubbo:reference interface="com.zx.mes.hyl.upms.service.UserServiceI" id="userServiceImpl"/>
+
+	<!--<dubbo:annotation package="com.zx.mes.hyl.service"/>-->
+
+</beans>

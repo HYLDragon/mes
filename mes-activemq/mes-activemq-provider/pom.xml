@@ -16,6 +16,11 @@
             <artifactId>mes-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.zx.mes.hyl</groupId>
+            <artifactId>mes-activemq-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>mes-activemq-provider</finalName>
