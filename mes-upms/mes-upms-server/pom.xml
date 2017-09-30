@@ -31,24 +31,9 @@
     <build>
         <finalName>mes-upms-server</finalName>
         <resources>
-            <!--recources文件夹下的所有文件都打进jar包-->
             <resource>
-                <targetPath>${project.build.directory}/classes</targetPath>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.properties</include>
-                </includes>
-            </resource>
-            <!-- 结合com.alibaba.dubbo.container.Main -->
-            <resource>
-                <targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>spring-mvc.xml</include>
-                </includes>
             </resource>
         </resources>
         <plugins>

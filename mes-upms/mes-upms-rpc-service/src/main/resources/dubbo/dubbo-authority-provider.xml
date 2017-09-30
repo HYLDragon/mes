@@ -31,25 +31,25 @@
 	<!--<dubbo:annotation package="com.zx.mes.hyl.service" />-->
 	<!--<context:component-scan base-package="com.zx.mes.hyl"/>-->
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.BugServiceI" ref="bugServiceImpl"/>
-	<bean id="bugServiceImpl" class="com.zx.mes.hyl.upms.service.impl.BugServiceImpl"></bean>
+	<bean id="bugServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.BugServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.BugTypeServiceI" ref="bugTypeServiceImpl"/>
-	<bean id="bugTypeServiceImpl" class="com.zx.mes.hyl.upms.service.impl.BugTypeServiceImpl"></bean>
+	<bean id="bugTypeServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.BugTypeServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.InitServiceI" ref="initServiceImpl"/>
-	<bean id="initServiceImpl" class="com.zx.mes.hyl.upms.service.impl.InitServiceImpl"></bean>
+	<bean id="initServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.InitServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.ResourceServiceI" ref="resourceServiceImpl"/>
-	<bean id="resourceServiceImpl" class="com.zx.mes.hyl.upms.service.impl.ResourceServiceImpl"></bean>
+	<bean id="resourceServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.ResourceServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.ResourceTypeServiceI" ref="resourceTypeServiceImpl"/>
-	<bean id="resourceTypeServiceImpl" class="com.zx.mes.hyl.upms.service.impl.ResourceTypeServiceImpl"></bean>
+	<bean id="resourceTypeServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.ResourceTypeServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.RoleServiceI" ref="roleServiceImpl"/>
-	<bean id="roleServiceImpl" class="com.zx.mes.hyl.upms.service.impl.RoleServiceImpl"></bean>
+	<bean id="roleServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.RoleServiceImpl"></bean>
 
 	<dubbo:service interface="com.zx.mes.hyl.upms.service.UserServiceI" ref="userServiceImpl"/>
-	<bean id="userServiceImpl" class="com.zx.mes.hyl.upms.service.impl.UserServiceImpl"></bean>
+	<bean id="userServiceImpl" class="com.zx.mes.hyl.upms.rpc.service.impl.UserServiceImpl"></bean>
 	<dubbo:annotation package="com.zx.mes.hyl.service.impl"/>
 
 </beans>

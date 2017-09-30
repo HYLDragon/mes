@@ -1,4 +1,4 @@
-package com.zx.mes.hyl.upms.service.impl;
+package com.zx.mes.hyl.upms.rpc.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 

@@ -40,14 +40,14 @@
             </resource>
             <!-- 结合com.alibaba.dubbo.container.Main -->
             <!-- 如果要用dubbo提供的main方法启动,则会默认读取sping.xml配置  -->
-            <resource>
-                <targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
-                <directory>src/main/resources/spring</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>spring.xml</include>
-                </includes>
-            </resource>
+            <!--<resource>-->
+                <!--<targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>-->
+                <!--<directory>src/main/resources/spring</directory>-->
+                <!--<filtering>true</filtering>-->
+                <!--<includes>-->
+                    <!--<include>spring.xml</include>-->
+                <!--</includes>-->
+            <!--</resource>-->
         </resources>
         <plugins>
             <plugin>
