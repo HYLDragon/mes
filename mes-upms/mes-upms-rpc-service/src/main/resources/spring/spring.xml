@@ -26,5 +26,5 @@
 	<!--<context:component-scan base-package="com.zx.mes.hyl.dao,com.zx.mes.hyl.service" />-->
 	<context:component-scan base-package="com.zx.mes.hyl.upms.dao,com.zx.mes.hyl.upms.service" />
 
-
+	<import resource="classpath:/dubbo/dubbo-authority-provider.xml"/>
 </beans>

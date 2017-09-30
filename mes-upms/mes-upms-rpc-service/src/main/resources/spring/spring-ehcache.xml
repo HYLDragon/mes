@@ -17,5 +17,5 @@
 	<bean id="cacheManagerFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
 		  p:configLocation="classpath:/spring/ehcache.xml" p:shared="false" />
 	<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cacheManager-ref="cacheManagerFactory" />
-	<import resource="classpath:/dubbo/dubbo-authority-provider.xml"/>
+
 </beans>
